@@ -30,17 +30,30 @@ body {
   height: calc(100% - 50px);
   width: 100%;
   padding: 20px;
-  background-color:rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.9);
   position: relative;
   z-index: 1;
 }
-.aboutDescriptionContent p {
+
+.aboutDescriptionContent p,
+.anggotaFamilyContent p {
   font-size: 14px;
   text-align: left;
+  max-width: 100%; /* Set lebar maksimum untuk teks agar tidak melebihi lebar konten */
 }
-.anggotaFamilyContent p{
-  font-size: 14px;
-  text-align: left;
+
+#aboutDescription,
+#anggotaFamily,
+#audioContent {
+  max-width: 100%; /* Set lebar maksimum untuk konten agar tidak melebihi lebar konten */
+}
+
+#audioContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px; /* Atur jarak atas agar elemen berada di tengah-tengah halaman */
 }
 
 .gallery-container {
@@ -61,7 +74,8 @@ body {
 .gallery-container img:hover {
   transform: scale(1.1);
 }
-.gallery-section{
+
+.gallery-section {
   background-color: #ffffff;
 }
 
@@ -70,7 +84,7 @@ body {
   justify-content: space-around;
   width: 100%;
   padding: 10px 0;
-  background-color:#222;
+  background-color: #222;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -85,6 +99,14 @@ body {
 .navbar a i {
   font-size: 24px;
 }
+.navbar a:hover {
+  color: #ffc107; /* Warna saat hover */
+}
+.navbar a.active,
+.navbar a:hover {
+  color: #ffc107; /* Warna saat hover dan saat halaman aktif */
+}
+
 
 @media (max-width: 576px) {
   .navbar {
