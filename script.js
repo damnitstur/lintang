@@ -11,10 +11,10 @@ function about() {
     $('#welcomeText').hide();
     $('.gallery-container').hide();
     $('.content p').hide();
-    $('#aboutDescription').show(); // Tampilkan #aboutDescription di halaman about
-    $('#anggotaFamily').hide(); // Sembunyikan #anggotaFamily di halaman about
+    $('#aboutDescription').show();
+    $('#anggotaFamily').hide();
 
-    // Menampilkan deskripsi "Tentang Lintang" di dalam elemen dengan ID "aboutDescription"
+   
     $('#aboutDescription').html(`
         <h3>Tentang Lintang : </h3>
         <div class="aboutDescriptionContent">
@@ -30,7 +30,7 @@ function admin() {
     $('#welcomeText').hide();
     $('.gallery-container').hide();
     $('.content p').hide();
-    $('#aboutDescription').hide(); // Sembunyikan #aboutDescription di halaman admin
+    $('#aboutDescription').hide(); 
     $('#anggotaFamily').html(`
         <h3>Anggota Family : </h3>
         <div class="anggotaFamilyContent">
@@ -46,17 +46,17 @@ function admin() {
             <p>Ris - Admin</p>
             <p>Yaya - Admin</p>
         </div>
-    `).show(); // Menampilkan #anggotaFamily di halaman admin
+    `).show(); 
 }
 
 function gallery() {
-    $('#welcomeText').text('Logo').show(); // Menampilkan kembali #welcomeText
+    $('#welcomeText').text('Logo').show();
     $('.content audio').remove();
     $('.gallery-container').show();
-    $('#aboutDescription').hide(); // Sembunyikan #aboutDescription di halaman gallery
-    $('#anggotaFamily').hide(); // Sembunyikan #anggotaFamily di halaman gallery
+    $('#aboutDescription').hide(); 
+    $('#anggotaFamily').hide(); 
 
-    // Menghapus semua elemen gambar yang sudah ada sebelum menambahkan gambar-gambar baru
+    
     $('.gallery-container').empty();
 
     var paragraph = document.createElement("p");
@@ -77,7 +77,7 @@ function gallery() {
         document.querySelector('.gallery-container').appendChild(img);
     });
 
-    // Menyembunyikan konten utama pada halaman lain jika ada
+ 
     $('.content p').remove();
     $('.content audio').remove();
 }
@@ -85,10 +85,10 @@ function gallery() {
 function addMedia() {
     $('.content p').remove();
     $('.content audio').remove();
-    $('#welcomeText').text('Audio Lintang').show(); // Menampilkan kembali #welcomeText
+    $('#welcomeText').text('Audio Lintang').show(); 
     $('.gallery-container').hide();
     $('#aboutDescription').hide();
-    $('#anggotaFamily').hide(); // Sembunyikan #anggotaFamily di halaman media
+    $('#anggotaFamily').hide(); 
 
     var audio = document.createElement("audio");
     audio.controls = true;

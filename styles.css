@@ -43,8 +43,6 @@ body {
   text-align: left;
 }
 
-
-
 .gallery-container {
   display: flex;
   flex-wrap: wrap;
@@ -53,18 +51,17 @@ body {
 }
 
 .gallery-container img {
-  width: calc(50% - 20px); /* 25% width untuk empat gambar dalam satu baris, dengan margin 20px */
-  max-width: 100%; /* Maksimum lebar gambar adalah 100% dari kontainer */
-  height: auto; /* Mengikuti proporsi gambar asli */
-  border: 1px solid #ffffff; /* Tambahkan border putih 1px untuk efek visual */
-  transition: transform 0.3s ease-in-out; /* Efek transisi ketika mouse hover */
+  width: calc(50% - 20px); 
+  max-width: 100%; 
+  height: auto; 
+  border: 1px solid #ffffff; 
+  transition: transform 0.3s ease-in-out; 
 }
 
 .gallery-container img:hover {
-  transform: scale(1.1); /* Membesar sedikit ketika mouse hover */
+  transform: scale(1.1);
 }
 .gallery-section{
-
   background-color: #ffffff;
 }
 
@@ -93,14 +90,10 @@ body {
   .navbar {
     padding: 5px 0;
   }
-}
-
-#welcomeText {
-  color: rgb(255, 255, 255);
-  margin-top: 20px;
-  margin-left: 10px;
-  font-size: 3vw;
-  transition: opacity 0.5s ease-in-out;
+  
+  #welcomeText {
+    font-size: 4vw;
+  }
 }
 
 .show {
