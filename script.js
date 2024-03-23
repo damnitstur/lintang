@@ -9,8 +9,8 @@ function gallery() {
   document.querySelector('.gallery-container').appendChild(paragraph);
 
   var images = [
-    'url_gambar_1.jpg',
-    'url_gambar_2.jpg',
+    'img/Artboard 10.jpg',
+    'img/Artboard 20.jpg',
     'url_gambar_3.jpg',
   ];
 
