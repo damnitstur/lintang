@@ -19,10 +19,10 @@ function about() {
         $('#aboutDescription').html(`
             <h3> Tentang Lintang : </h3>
             <div class="aboutDescriptionContent">
-                <p>Nama Lintang diciptakan oleh Devi yang saat ini menjabat sebagai admin. Lintang didirikan pada tanggal 5 September 2022, dengan 60% anggota berasal dari migrasi NET Family, dengan Je sebagai ketua. Lintang dibuat sebagai respons terhadap hiruk-pikuk yang ada di aplikasi Litmatch. bahkan mungkin tidak peduli dengan semua aturan yg ada di Litmatch</p>
+                <p>Lintang didirikan pada tanggal 5 September 2022, dengan 60% anggota berasal dari migrasi NET Family, dan Je sebagai ketua. </p>
+                <p>Devi yang saat ini menjabat sebagai admin, adalah orang yg memiliki ide untuk mengunakan nama lintang sebagai family di lismet</p>
+                <p>Lintang dibuat sebagai respons terhadap hiruk-pikuk yang ada di aplikasi Litmatch, bahkan mungkin tidak peduli dengan semua aturan yg ada di Litmatch</p>
                 <p>Tidak ada aturan pendaftaran yang kaku, dan tidak diwajibkan menggunakan title namun anggota dihimbau untuk tetap menjaga kewajiban solat</p>
-                <p>Saat ini, Lintang memiliki dua title, yaitu L dan its. Title "its" (In TFOT Squad) merupakan generasi komunitas atau aliansi dari TFOT (The Family Of Tatalosa) atau Bogor Tatalosa, sebuah komunitas yang berdiri sejak tahun 2012 dengan anggota aktif sebanyak 200 orang, yang dipimpin oleh Its Tur.</p>
-                <p>Jadi jika ingin bergabung sebaiknya dipikirkan terlebih dahulu karena kami benar tidak peduli dengan apapun yang ada di aplikasi lismet</p>
             </div>
             `).show();
     
