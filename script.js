@@ -1,5 +1,5 @@
 function gallery() {
-  $('#welcomeText').text('Gallery');
+  $('#welcomeText').text('Logo');
   $('.content audio').remove();
   $('.gallery-container').show().empty();
   
@@ -11,7 +11,8 @@ function gallery() {
   var images = [
     'img/Artboard 10.jpg',
     'img/Artboard 20.jpg',
-    'url_gambar_3.jpg',
+    'img/Artboard 30.jpg',
+    'img/Artboard 40.jpg',
   ];
 
   images.forEach(function(imageUrl) {
@@ -19,27 +20,25 @@ function gallery() {
     img.src = imageUrl;
     document.querySelector('.gallery-container').appendChild(img);
   });
+
+  // Menyembunyikan konten utama pada halaman lain jika ada
+  $('.content p').remove();
+  $('.content audio').remove();
 }
 
 function home() {
   $('#welcomeText').text('Selamat datang di website resmi Lintang');
   $('.gallery-container').hide();
-  $('.content p').remove();
-  $('.content audio').remove();
 }
 
 function about() {
   $('#welcomeText').text('Tentang Lintang');
   $('.gallery-container').hide();
-  $('.content p').remove();
-  $('.content audio').remove();
 }
 
 function admin() {
   $('#welcomeText').text('Admin');
   $('.gallery-container').hide();
-  $('.content p').remove();
-  $('.content audio').remove();
 }
 
 function addMedia() {
