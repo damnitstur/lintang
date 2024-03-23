@@ -1,20 +1,20 @@
 function home(event) {
-    event.preventDefault(); // Menghentikan aksi default dari hyperlink
+    event.preventDefault(); 
     $('#welcomeText').text('Selamat datang di website resmi Lintang Family').show(); 
     $('.gallery-container').hide();
     $('.content audio').remove();
     $('.content p').remove();
     $('#aboutDescription').hide();
     $('#anggotaFamily').hide();
-    $('#audioContent').hide(); // Sembunyikan elemen audio
+    $('#audioContent').hide(); 
 }
 
 function about() {
     $('#welcomeText').hide();
     $('.gallery-container').hide();
     $('.content p').hide();
-    $('#aboutDescription').show(); // Menampilkan kembali #aboutDescription
-    $('#aboutDescriptionContent').show(); // Menampilkan kembali konten di dalam #aboutDescription
+    $('#aboutDescription').show(); 
+    $('#aboutDescriptionContent').show(); /
     $('#anggotaFamily').hide();
         $('#aboutDescription').html(`
             <h3> Tentang Lintang : </h3>
@@ -32,24 +32,24 @@ function about() {
 
 
 function addMedia(event) {
-    event.preventDefault(); // Menghentikan aksi default dari hyperlink
+    event.preventDefault(); 
     $('.content p').remove();
     $('.content audio').remove();
     $('#welcomeText').text('Audio Lintang').show(); 
     $('.gallery-container').hide();
     $('#aboutDescription').hide();
     $('#anggotaFamily').hide(); 
-    $('#audioContent').show(); // Tampilkan elemen audio
+    $('#audioContent').show(); 
 
     var div = document.createElement("div");
     div.innerHTML = '<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1782701706&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/its-tur" title="It&#x27;s Tur" target="_blank" style="color: #cccccc; text-decoration: none;">It&#x27;s Tur</a> · <a href="https://soundcloud.com/its-tur/l-lintang" title="L~ Lintang" target="_blank" style="color: #cccccc; text-decoration: none;">L~ Lintang</a></div>';
     
-    document.querySelector('#audioContent').innerHTML = ''; // Kosongkan konten audio sebelum menambahkan iframe baru
-    document.querySelector('#audioContent').appendChild(div); // Tambahkan iframe baru ke dalam elemen audio
+    document.querySelector('#audioContent').innerHTML = ''; 
+    document.querySelector('#audioContent').appendChild(div); 
 }
 
 function admin(event) {
-    event.preventDefault(); // Menghentikan aksi default dari hyperlink
+    event.preventDefault(); 
     $('#welcomeText').hide();
     $('.gallery-container').hide();
     $('.content p').hide();
@@ -85,7 +85,7 @@ function gallery(event) {
     $('.gallery-container').empty();
 
     var paragraph = document.createElement("p");
-    var text = document.createTextNode("Ini adalah galeri foto Lintang.");
+    var text = document.createTextNode("");
     paragraph.appendChild(text);
     document.querySelector('.gallery-container').appendChild(paragraph);
 
